@@ -15,7 +15,7 @@ import startup from "./startup.js";
 export default async function register(app) {
   await app.registerPlugin({
     label: "Example Payments",
-    name: "payments-example",
+    name: "payments-cash",
     version: pkg.version,
     i18n,
     graphQL: {
@@ -25,7 +25,7 @@ export default async function register(app) {
       startup: [startup]
     },
     paymentMethods: [{
-      name: "iou_example",
+      name: "payments_cash",
       canRefund: true,
       displayName: "IOU Example",
       functions: {

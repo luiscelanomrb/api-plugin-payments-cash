@@ -16,5 +16,5 @@ extend union PaymentMethodData = ExampleIOUPaymentMethodData
 
 extend enum PaymentMethodName {
   "IOU Example payment method"
-  iou_example
+  payments_cash
 }
